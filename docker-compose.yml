@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  aspnetcore5microservices:
+    image: ${DOCKER_REGISTRY-}aspnetcore5microservices
+    build:
+      context: .
+      dockerfile: AspNetCore5Microservices/Dockerfile
